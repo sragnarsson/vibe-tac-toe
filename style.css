@@ -202,13 +202,17 @@ h1 {
 }
 
 .cell.winning-cell.x line {
-    stroke: #ff4500 !important;
+    stroke: #007bff !important; /* Brighter blue fire */
     stroke-width: 14px !important;
+    /* Adjust fireEffect keyframes if a different color scheme is desired */
+    filter: drop-shadow(0 0 10px #007bff) drop-shadow(0 0 15px #00bfff);
 }
 
 .cell.winning-cell.o circle {
-    stroke: #ff8c00 !important;
+    stroke: #ff4500 !important; /* Orange/red fire */
     stroke-width: 14px !important;
+    /* Adjust fireEffect keyframes if a different color scheme is desired */
+    filter: drop-shadow(0 0 10px #ff4500) drop-shadow(0 0 15px #ff8c00);
 }
 
 /* Custom Scrollbar */
