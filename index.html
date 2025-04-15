@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laser Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+    <h1>Laser Tic-Tac-Toe</h1>
+    <div id="status" class="status">Player X's turn</div>
+
+    <div id="board" class="board">
+        <!-- Laser Container -->
+        <div id="laser-container" class="laser-container"></div>
+        <!-- Cells -->
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+
+    <button id="reset" class="reset-button">Reset Game</button>
+
+    <!-- SVG Templates (hidden) -->
+    <div style="display: none;">
+        <!-- X Mark SVG Template -->
+        <svg id="x-template" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <line class="x-line-1" x1="20" y1="20" x2="80" y2="80" stroke="#dc3545" stroke-width="12" stroke-linecap="round"/>
+            <line class="x-line-2" x1="80" y1="20" x2="20" y2="80" stroke="#dc3545" stroke-width="12" stroke-linecap="round"/>
+        </svg>
+        
+        <!-- O Mark SVG Template -->
+        <svg id="o-template" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="35" fill="none" stroke="#17a2b8" stroke-width="12"/>
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
